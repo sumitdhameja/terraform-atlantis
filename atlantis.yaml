@@ -1,0 +1,8 @@
+workflows:
+  pull_request:
+    plan:
+      steps:
+        - run: terraform plan -out=tfplan
+    apply:
+      steps:
+        - run: terraform apply tfplan
