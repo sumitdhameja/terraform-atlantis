@@ -1,0 +1,5 @@
+repos:
+    - id: /.*/
+      pre_workflow_hooks:
+        - run: ./repo-config-generator.sh
+          description: Generating configs
